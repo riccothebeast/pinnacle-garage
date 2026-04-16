@@ -11,21 +11,24 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www
 
-# Copy ONLY backend (Laravel app)
+# Copy ONLY Laravel backend
 COPY backend/ .
 
-# Install dependencies
+# Ensure required Laravel directories exist
+RUN mkdir -p storage bootstrap/cache
+
+# Set proper permissions
+RUN chmod -R 775 storage bootstrap/cache
+
+# Install Laravel dependencies
 RUN composer install --no-interaction --prefer-dist
 
-# Laravel setup
+# Setup environment
 RUN cp .env.example .env || true
 RUN php artisan key:generate || true
 
-# Fix permissions
-RUN chmod -R 775 storage bootstrap/cache
-
-# Expose port
+# Expose Render port
 EXPOSE 10000
 
-# Start server
+# Start Laravel server
 CMD php artisan serve --host=0.0.0.0 --port=10000
