@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: garage-management-api
+    runtime: php
+    runtimeVersion: 8.2
+    rootDir: backend
+    buildCommand: bash render-build.sh
+    startCommand: php -S 0.0.0.0:$PORT -t public/
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_URL
+        fromService:
+          type: web
+          property: url
+      - key: CACHE_DRIVER
+        value: array
+      - key: SESSION_DRIVER
+        value: file
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: DB_DATABASE
+        value: database.sqlite
