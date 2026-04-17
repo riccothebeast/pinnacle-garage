@@ -69,13 +69,16 @@ h1, h2, h3, .logo-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  position: absolute;
+  padding: 18px 40px;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  background: transparent;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .logo-text {
@@ -112,12 +115,12 @@ h1, h2, h3, .logo-text {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 72px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 5%;
+  padding: 60px 5% 40px;
   background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.1) 100%), url('/hero-bg.png') center/cover no-repeat;
   position: relative;
 }
