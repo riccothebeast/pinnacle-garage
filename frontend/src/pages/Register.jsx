@@ -37,7 +37,7 @@ export default function Register() {
       <div className="glass" style={{ width: '100%', maxWidth: '420px', padding: '48px 40px', borderRadius: '20px', border: '1px solid rgba(212,175,55,0.25)', boxShadow: '0 25px 60px rgba(0,0,0,0.6)' }}>
         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
           <h1 style={{ fontSize: '1.6rem', margin: 0, color: '#f5d98e', letterSpacing: '0.05em' }}>Create Account</h1>
-          <p style={{ color: 'var(--text-secondary)', marginTop: '6px', fontSize: '0.9rem' }}>Join Pinnacle Garage</p>
+          <p style={{ color: 'var(--text-secondary)', marginTop: '6px', fontSize: '0.9rem' }}>Join Land Rover and Jaguar Auto Boutique</p>
         </div>
 
         {error && <div style={{ background: 'rgba(231,76,60,0.15)', border: '1px solid rgba(231,76,60,0.4)', borderRadius: '10px', padding: '12px 16px', marginBottom: '20px', color: '#ff6b6b', fontSize: '0.9rem' }}>{error}</div>}

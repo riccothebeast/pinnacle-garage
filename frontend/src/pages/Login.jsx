@@ -58,7 +58,7 @@ export default function Login() {
           }}>🔑</div>
           <h1 style={{ fontSize: '1.6rem', margin: 0, color: '#f5d98e', letterSpacing: '0.05em' }}>Welcome Back</h1>
           <p style={{ color: 'var(--text-secondary)', marginTop: '6px', fontSize: '0.9rem' }}>
-            Log in to Pinnacle Garage
+            Log in to Land Rover and Jaguar Auto Boutique
           </p>
         </div>
 

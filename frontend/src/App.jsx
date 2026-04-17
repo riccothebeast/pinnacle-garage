@@ -29,7 +29,7 @@ function NavBar({ cartCount }) {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="logo-text">PINNACLE</Link>
+      <Link to="/" className="logo-text">Land Rover & Jaguar</Link>
       <div className="nav-links">
         <Link to="/shop" className="nav-item">SPARE PARTS</Link>
         <a href="/#about" className="nav-item">ABOUT</a>
@@ -66,7 +66,7 @@ function Layout({ children, cartCount }) {
       <NavBar cartCount={cartCount} />
       <main>{children}</main>
       <footer style={{ textAlign: 'center', padding: '40px', color: 'var(--text-secondary)' }}>
-        <p>&copy; 2026 Pinnacle Garage &amp; Parts - Premium Quality Guaranteed.</p>
+        <p>&copy; 2026 Land Rover and Jaguar Auto Boutique - Premium Quality Guaranteed.</p>
       </footer>
     </>
   );

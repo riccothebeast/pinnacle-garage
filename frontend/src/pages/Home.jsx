@@ -7,8 +7,8 @@ function Home() {
       <section className="hero">
         <div className="hero-subtitle-top">PREMIUM AUTOMOTIVE SPECIALISTS</div>
         <h1>
-          <span className="highlight">PINNACLE</span>
-          GARAGE & PARTS
+          <span className="highlight">Land Rover</span> and <span className="highlight">Jaguar</span>
+          Auto Boutique
         </h1>
         <p className="description">
           High-quality genuine & aftermarket spare parts for <br />
@@ -33,10 +33,10 @@ function Home() {
 
       {/* About Section */}
       <section id="about" className="container" style={{ padding: '80px 20px', textAlign: 'center' }}>
-        <h2 style={{ marginBottom: '30px', fontSize: '2.5rem' }}>About Pinnacle</h2>
+        <h2 style={{ marginBottom: '30px', fontSize: '2.5rem' }}>About Land Rover and Jaguar Auto Boutique</h2>
         <div className="glass" style={{ padding: '50px', maxWidth: '800px', margin: '0 auto', textAlign: 'left' }}>
           <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '20px', lineHeight: '1.8' }}>
-            At Pinnacle Garage & Parts, we specialize in supplying both genuine and high-quality aftermarket components exclusively for luxury automotive brands.
+            At Land Rover and Jaguar Auto Boutique, we specialize in supplying both genuine and high-quality aftermarket components exclusively for luxury automotive brands.
           </p>
           <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
             With decades of combined experience specializing in <strong style={{ color: 'var(--accent-color)' }}>Jaguar, BMW, and Range Rover</strong>, our curated catalog ensures your vehicle maintains factory-level performance and prestige. We source directly from top-tier manufacturers to guarantee uncompromising quality.
@@ -51,7 +51,7 @@ function Home() {
           <div className="glass" style={{ padding: '40px' }}>
             <h3 style={{ marginBottom: '20px', color: 'var(--accent-color)' }}>Reach Out</h3>
             <p style={{ marginBottom: '15px' }}><strong>Phone:</strong> +1 (800) 555-0198</p>
-            <p style={{ marginBottom: '15px' }}><strong>Email:</strong> parts@pinnaclegarage.com</p>
+            <p style={{ marginBottom: '15px' }}><strong>Email:</strong> contact@landroverjaguar.com</p>
             <p><strong>Location:</strong> 1200 Automotive Way, Suite 100<br/>Motorsport Valley, CA 90210</p>
           </div>
           <form className="glass" style={{ padding: '40px' }} onSubmit={(e) => { e.preventDefault(); alert("Thanks for reaching out! We'll get back to you shortly."); }}>

@@ -107,7 +107,7 @@ export default function AdminDashboard() {
           <span style={{ fontSize: '1.4rem' }}>⚙️</span>
           <div>
             <div style={{ color: '#f5d98e', fontWeight: 700, fontSize: '1.1rem', letterSpacing: '0.05em' }}>Admin Dashboard</div>
-            <div style={{ color: 'var(--text-secondary)', fontSize: '0.78rem' }}>Pinnacle Garage &amp; Parts</div>
+            <div style={{ color: 'var(--text-secondary)', fontSize: '0.78rem' }}>Land Rover and Jaguar Auto Boutique</div>
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>

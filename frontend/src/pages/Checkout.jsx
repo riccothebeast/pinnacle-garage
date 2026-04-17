@@ -84,7 +84,7 @@ function Checkout({ cart, setCart }) {
           <div className="container" style={{ padding: '40px 20px', maxWidth: '600px', margin: '0 auto' }}>
               <div id="receipt" className="glass" style={{ padding: '40px', background: '#fff', color: '#000' }}>
                   <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-                      <h1 style={{ color: '#000', margin: 0 }}>PINNACLE GARAGE</h1>
+                      <h1 style={{ color: '#000', margin: 0 }}>Land Rover and Jaguar Auto Boutique</h1>
                       <p style={{ color: '#666', margin: '5px 0' }}>Premium Auto Parts Receipt</p>
                       <p style={{ fontSize: '14px', color: '#888' }}>Date: {receiptData.date}</p>
                       <h3 style={{ marginTop: '20px', color: '#333' }}>Order #{receiptData.orderId}</h3>
